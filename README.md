@@ -1,4 +1,6 @@
 # SentenceFixerCSEC
+Effective written communication depends heavily on correct grammar. Poor grammar leads to ambiguous sentences, reduced readability, and unintended miscommunication. In professional, academic writing, and everyday contexts, grammar errors can make a writer seem less educated or credible.
+
 My Computer Science Final Project:
 
 Extra Information:
