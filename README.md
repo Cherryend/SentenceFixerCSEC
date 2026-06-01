@@ -3,6 +3,8 @@ My Computer Science Final Project:
 
 Extra Information:
 Created in JGrasp using Java + Java Swing for the GUI.
+SentenceFixer --> First iteration of the sentence fixer, does not include GUI.
+SentenceFixer2 --> Second iteration of the sentence fixer, includes GUI and other additional debug features.
 
 This sentence fixer does not take context into account.
 This sentence fixer should be able to:
