@@ -1,5 +1,6 @@
 # SentenceFixerCSEC
 Problem Description:
+
 Effective written communication depends heavily on correct grammar. Poor grammar leads to ambiguous sentences, reduced readability, and unintended miscommunication. In professional, academic writing, and everyday contexts, grammar errors can make a writer seem less educated or credible.
 
 I have bad grammar. I admit that openly because it’s something I want to improve. Grammar is a big part of my everyday life; good grammar is important for making my work in or outside of school more effective. I write for many classes, such as computer science, robotics, multimedia, English, chemistry, physics, history, and so much more. Each class requires me to explain complex ideas clearly, and when my grammar is weak, my ideas don’t come across as strongly. That frustrates me, because I know what I want to say, but the structure of my sentences sometimes fails me.
