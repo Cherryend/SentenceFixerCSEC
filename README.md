@@ -1,5 +1,12 @@
 # SentenceFixerCSEC
+Problem Description:
 Effective written communication depends heavily on correct grammar. Poor grammar leads to ambiguous sentences, reduced readability, and unintended miscommunication. In professional, academic writing, and everyday contexts, grammar errors can make a writer seem less educated or credible.
+
+I have bad grammar. I admit that openly because it’s something I want to improve. Grammar is a big part of my everyday life; good grammar is important for making my work in or outside of school more effective. I write for many classes, such as computer science, robotics, multimedia, English, chemistry, physics, history, and so much more. Each class requires me to explain complex ideas clearly, and when my grammar is weak, my ideas don’t come across as strongly. That frustrates me, because I know what I want to say, but the structure of my sentences sometimes fails me.
+
+To make sure this is an achievable topic for my project, I’m not going to make the algorithm consider context in the sentences. Understanding context would require natural language processing far beyond the scope of this lab. Instead, I will focus on terminal grammar rules—things like capitalization, end punctuation, and duplicate word removal. These are concrete, pattern‑based problems that I can solve with regular expressions and simple string processing.
+
+My goal here is to learn something new and make the most of it, in addition to reviewing my language skills. I want to leave this project with a better understanding of both Java programming (especially GUI development with Swing) and the grammar rules I struggle with. To solve this problem, I will use pattern recognition algorithms to find, correct, and replace words or punctuation based on terminal grammar rules. This approach keeps my project realistic while still giving me a useful tool to fix my most common mistakes.
 
 My Computer Science Final Project:
 
@@ -19,7 +26,7 @@ This sentence fixer should be able to:
 Usage Instructions
 1. Download and open JGrasp
 2. Open and import the code file for the sentence fixer.
-3. Import the code file into Jgrasp as a new Java Project. 
+3. Import the code file in Jgrasp as new Java Project. 
 4. Click run, or use the run shortcut (Command R).
 5. The GUI screen will become visible, then click on the pop-up.
 6. In the pop-up, select the first Box.
@@ -39,6 +46,7 @@ Matcher matcher = pattern.matcher(str);
 return matcher.replaceAll("$1");
 }
 
+More on testing code: 
 This piece of code compiles regular expressions using regex:  Pattern.compile(...), it uses different markers as variables with:
 (?i) matching case-insensitive words in sentences
 \\b represents the word boundary in longer words
@@ -48,7 +56,18 @@ This piece of code compiles regular expressions using regex:  Pattern.compile(..
 pattern.matcher(str) links the sentence to the regex pattern
 matcher.replaceAll("$1"); replaces the entire duplicate sequence with the very first occurrence. 
 
+What I Learned in this lab:
+1. Getting components to align and size correctly took trial and error. I now understand layout managers (BorderLayout, FlowLayout) better, and why SwingUtilities.invokeLater is necessary.
+2. The duplicate word remover works for simple cases, but I discovered that punctuation or mixed case breaks it. Next time I would use a loop + split or a more robust pattern.
+3. Fixing a sentence in the wrong order (e.g., punctuating before capitalizing) can produce odd results. I chose capitalize --> punctuate --> duplicates --> doubleSpace. That works for most examples.
+4. Wrapping the processing logic in try-catch and showing a pop-up prevents the whole application from crashing. I also printed the stack trace for debugging – very helpful.
+5. This project taught me that even a “simple” sentence fixer has many hidden edge cases. Completing the GUI felt like a big win because Swing was not something I was taught. I’m happy that the code is modular, handles basic errors, and that the user can see the fixed sentence instantly. With more time, I would love to add the dictionary and learning features I mentioned earlier, that would turn a lab assignment into a genuinely useful tool.
 
+Potential Improvements: 
+Spelling awareness: understand how words are formed so I can fix 'hte' into 'the' using a dictionary or edit distance.
+Custom dictionary: let the user add accepted words or corrections, stored permanently.
+Better duplicate detection: handle punctuation and preserve correct capitalization.
+Multi‑sentence support: splits on ., !, ? and fixes each part of a sentence separately.
 
 
 
